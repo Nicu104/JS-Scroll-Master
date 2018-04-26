@@ -1,0 +1,21 @@
+*{
+    margin:10px;
+    padding:3px;
+    /* outline:1px solid blue; */
+}
+
+#wraper{
+    width:100em;
+
+}
+#insertion{
+    vertical-align:top;
+    display:inline-block;
+    width:23em;
+}
+
+#cards{
+    vertical-align:top;
+    display:inline-block;
+    width:50em;
+}
