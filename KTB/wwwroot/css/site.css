@@ -1,0 +1,247 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url("/images/bricWall.jpg");
+    background-color: #cccccc;
+}
+body a:hover{
+    text-decoration: none;
+}
+
+.body-content {
+    margin-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url("/images/background1.jpg");
+    /* background-color: white;  */
+    box-shadow: 5px 10px #888888;
+}
+
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+.mainBody{
+    height: 100%;
+    margin-top: 10px;
+}
+
+.leftSide{
+    display: inline-block;
+    width: 20%;
+    min-width: 50px;
+    vertical-align: top;
+    height: 100%;
+   
+}
+.leftSide img {
+    width: 100%;
+    height: auto;
+    outline: 1px solid black;
+}
+.leftSide h4{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rightSide{
+    /* margin-left: 10%; */
+    display: inline-block;
+    width: 79%;
+    vertical-align: top;
+    /* outline: 1px solid red; */
+}
+.rightSide h4 b{
+    color: red;
+}
+.rightSide h4, .rightSide p{
+    text-align: right;
+    margin-right: 5%;
+}
+
+.rightSide p{
+    /* display: inline-block; */
+    font-size: 13pt;
+    color: rgb(91, 91, 236);
+}
+
+.overTabel{
+    width: 100%;
+    overflow: auto;
+    max-height: 200px;
+    /* outline: 1px solid red; */
+}
+
+.obiecte {
+    width: 48%;
+    display: inline-block;
+    /* outline: 1px solid green; */
+    vertical-align: top;
+    padding: 10px;
+}
+.mainBodyCenter{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    /* padding: 10px; */
+    text-align: left;
+    min-width: 250px;
+    /* outline: 1px solid blue; */
+}
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+    padding: 3px;
+    width: 100%
+}
+
+.container .selectionType{
+    width: 49%;
+    margin-top: 1em;
+    display: inline-block;
+    vertical-align:top;
+}
+.container .selectionType input{
+    width: 75%;
+}
+
+#game button{
+    width: 20%;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+#game p{
+    font-size: 13pt;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.card{
+    padding:5px;
+    text-align: center;
+    display: inline-block;
+    min-width: 13rem;
+}
+
+
+ /* ********************** mobile devices ************************* */
+@media screen and (max-width: 480px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+    
+    .leftSide img {
+            width: 100%;
+            height: auto;
+    }
+    .mainBody{
+        width: 100%;
+    }
+
+    .leftSide{
+        /* display: inline-block; */
+        width: 50%;
+        /* outline: 1px solid black; */
+    }
+    .leftSide img{
+        /* display: inline-block; */
+        width: 100%;
+        outline: 1px solid black;
+    }
+    .rightSide h4 b{
+        color: red;
+    }
+    .rightSide h4, .rightSide p{
+        text-align: center;
+    }
+    .rightSide p{
+        font-size: 13pt;
+        color: rgb(91, 91, 236);
+    }
+    .rightSide{
+        /* margin-left: 10%; */
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        /* outline: 1px solid red; */
+    }
+    #played{
+        margin: 0%;
+        width: 100%;
+        float: none;
+    }
+    .obiecte {
+        width: 100%;
+        display: inline-block;
+        /* outline: 1px solid green; */
+        vertical-align: top;
+        padding: 10px;
+    }
+    .overTabel{
+        width: 100%;
+        max-height: 200px;
+        overflow: auto;
+        /* outline: 1px solid red; */
+    }
+    
+    .container .selectionType, .container .selectionType input{
+        /* display: inline-block; */
+        width: 100%;
+    }
+  
+    .card{
+        padding:5px;
+        text-align: center;
+        /* display: inline-block; */
+        /* min-width: 13rem; */
+        width: 100%;
+        margin-bottom: .5em;
+    }
+
+    #game button{
+        width: 100%;
+        margin-left: 0em;
+        margin-top: 0.5em;
+    }
+}
+
+
+
+/* Hide/rearrange for smaller screens */
+@media screen and (min-width: 482px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.regLog{
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    padding: 20px;
+    margin-top: 10px;
+    /* text-align: center; */
+}
+
+#game{
+    margin-top: 1em;
+    padding: 10px;
+    background-color: beige;
+}

@@ -1,0 +1,93 @@
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">KTB</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <!-- <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li> -->
+                    <!-- <li><a asp-area="" asp-controller="Home" asp-action="LogPage">Login/Register</a></li> -->
+                    <li><a asp-area="" asp-controller="Home" asp-action="LogOut">Log off</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Played">Games Log</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- <h3>@ViewData["Message"]</h3> -->
+<div class="mainBody">
+    <div class="leftSide">
+        <img src="/images/placeholder-hi.png" alt="Place holder image">
+
+        <h4>Jora</h4>
+        &nbsp; &nbsp;
+    </div>
+    <div class="rightSide">
+
+        <div class="mainBodyCenter overTabel">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>Rank</td>
+                    <td>Score</td>
+                </tr>
+                foreach(var user in ViewBag.users){
+                    <tr>
+                        <td>user.first_name</td>
+                        <td>user.rank</td>
+                        <td>user.score</td>
+                    </tr>
+                }
+            </table>
+        </div>
+
+        <div class="obiecte">
+        <h4>Rank <b>Beginner</b>  <img src="/images/ranking-cup.png" alt="Cup"></h4>
+        <h4>Points <b>1500</b> <img src="/images/scoreboard.png" alt="Score"></h4>
+        <form action="CategoryGame" method="POST">
+        <h4>Prefered categories <img src="/images/category.png" alt="Category"><br>
+            <select name="category">
+                <option value="" disabled></option>
+                <option value="books">Books</option>
+                <option value="music">Music</option>
+                <option value="film">Film</option>
+                <option value="television">Television</option>
+                <option value="vehicle">Vehicle</option>
+                <option value="music">Music</option>
+            </select>
+            <a asp-area="" asp-controller="Home" asp-action="AddCategory">
+                <img src="/images/addCategory.png" alt="Add">
+            </a>
+        </h4>
+        </form>
+        <p class="overTabel">
+            <a asp-area="" asp-controller="Home" asp-action="PlayGround">
+                History</a> 
+            <a asp-area="" asp-controller="Home" asp-action="Remove">
+                <img src="/images/trash1.png" alt="Trash Can">
+            </a><br>
+
+            <a asp-area="" asp-controller="Home" asp-action="PlayGround">
+                Sports</a>
+            <a asp-area="" asp-controller="Home" asp-action="Remove">
+                <img src="/images/trash1.png" alt="Trash Can">
+            </a><br>
+            <a asp-area="" asp-controller="Home" asp-action="PlayGround">
+                Animal</a>
+            <a asp-area="" asp-controller="Home" asp-action="Remove">
+                <img src="/images/trash1.png" alt="Trash Can">
+            </a><br>
+        </p>
+        </div>
+    </div>
+</div>
+
+ 
+   
